@@ -1,0 +1,80 @@
+<form action="https://pay.sandbox.fasterpay.com/payment/form" method="POST">
+    <div>
+        <label>order_id:</label>
+        <input type="text" name="merchant_order_id" id="merchant_order_id" value="123123">
+    </div>
+
+    <div>
+        <label>amount:</label>
+        <input type="text" name="amount" value="0.10">
+    </div>
+
+
+    <div>
+        <label>currency:</label>
+    	<select name="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="TRY">TRY</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="DKK">DKK</option>
+            <option value="NOK">NOK</option>
+            <option value="SEK">SEK</option>
+            <option value="CHF">CHF</option>
+            <option value="AED">AED</option>
+            <option value="CZK">CZK</option>
+            <option value="HKD">HKD</option>
+            <option value="PLN">PLN</option>
+            <option value="RUB">RUB</option>
+            <option value="SGD">SGD</option>
+            <option value="THB">THB</option>
+            <option value="NZD">NZD</option>
+            <option value="HUF">HUF</option>
+        </select>
+    </div>
+
+    <div>
+        <label>public_key:</label> 
+        <input id="public-key-input" type="text" name="api_key" value="t_b1183bc78d62e4ccc3db7622ab6bbf">
+    </div>
+
+    <div>
+        <label>description:</label>
+        <input type="text" name="description" value="Test product desctiption">
+    </div>
+
+    <div>
+        <label>recurring_name:</label>
+        <input type="text" name="recurring_name" value="Test FP Recurring">
+    </div>
+
+    <div>
+        <label>recurring_sku_id:</label>
+        <input type="text" name="recurring_sku_id" value="fp_test_recurring">
+    </div>
+
+    <div>
+        <label>recurring_period:</label>
+        <input type="text" name="recurring_period" value="0">
+    </div>
+
+    <div>
+        <label>recurring_trial_amount:</label>
+        <input type="text" name="recurring_trial_amount" value="0">
+    </div>
+    <div>
+        <label>recurring_trial_period:</label>
+        <input type="text" name="recurring_trial_period" value="0">
+    </div>
+    <div>
+        <label>pingback_url:</label>
+        <input type="text" name="pingback_url" value="http://google.com/pingback">
+    </div>
+
+    <button type="submit">Submit</button>
+    <script type="text/javascript">
+       document.getElementById('merchant_order_id').value = Math.round((new Date()).getTime() / 1000);
+    </script>
+</form>

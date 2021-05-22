@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iTranscriptSuite" parallel="tests" thread-count="25">
+    <parameter name="groupReport" value="/Report.html" />
+    <parameter name="myBrowser" value="chrome"/>
+    <parameter name="server" value="local"/>
+    <parameter name="downloadPath" value="\files\"/>
+    <parameter name="toMails" value="viloh@seamfix.com" />
+    <parameter name="config" value="parallel.conf.json"/>
+    <parameter name="environment" value="chrome"/>
+    <parameter name="testEnv" value="stagingData" />
+
+
+
+
+    <!--Test XML -->
+    <test name=" Requests" preserve-order="true">
+        <parameter name="testEnv" value="stagingData"/>
+        <parameter name="myBrowser" value="chrome"></parameter>
+        <classes>
+            <class name="fasterPay.PayForm">
+                <methods>
+                    <include name="emptyPayFormDetails"></include>
+                    <include name="invalidPayFormDetails"></include>
+                    <include name="validPayFormDetails"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name=" RequestsName" preserve-order="true">
+        <parameter name="testEnv" value="stagingData"/>
+        <parameter name="myBrowser" value="chrome"></parameter>
+        <classes>
+            <class name="fasterPay.WidgetForNewOrderId">
+                <methods>
+                    <include name="emptyCardDetails"></include>
+                    <include name="invalidCardDetails"></include>
+                    <include name="validCardDetails"></include>
+                    <include name="navigateToYopmai"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+</suite> 

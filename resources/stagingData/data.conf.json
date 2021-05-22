@@ -1,0 +1,46 @@
+{
+  "Url":{
+    "url": "http://unn-itransrevampaws.itranscript.ng/"
+  },
+
+  "Invalid_PayFormDetails":{
+    "orderId": "",
+    "amount": "opi",
+    "publicKey" : "irtuieirtur",
+    "recurringPeriod" : "1",
+    "pingBackUrl" : "jjjjjj"
+  },
+  "Valid_PayFormDetails":{
+    "orderId": "77777",
+    "amount": "60",
+    "publicKey" : "t_b1183bc78d62e4ccc3db7622ab6bbf",
+    "description" : "Test Mode",
+    "recurringPeriod" : "0",
+    "pingBackUrl" : "http://google.com/pingback",
+    "recurringName" : "FTR Production",
+    "recurringSkuId" : "fp_test_recurring",
+    "recurringTrialAmount": "0.1",
+    "recurringTrialPeriod" : "0"
+  },
+  "Invalid_Card_Details" :{
+    "email" : "viloh",
+    "firstName" : "12342",
+    "lastName" : "384783",
+    "cardNumber" : "92384",
+    "cardExpiry" : "9013",
+    "cardCVV" : "85",
+    "cardExpiry2" : "12/12"
+  },
+  "Valid_Card_Details" :{
+    "email" : "test@yopmail.com",
+    "firstName" : "victor",
+    "lastName" : "iloh",
+    "cardNumber" : "4111111111111111",
+    "cardExpiry" : "12/23",
+    "cardCVV" : "853"
+  },
+  "NavigateToYopmail" : {
+    "link": "http://www.yopmail.com/en/",
+    "email" : "test@yopmail.com"
+  }
+}
